@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Laborer</title>
+</head>
+<body>
+    <h2>Create Laborer</h2>
+    <form th:action="@{/laborers}" th:object="${laborer}" method="post">
+        <div>
+            <label>Name:</label>
+            <input type="text" th:field="*{name}" />
+        </div>
+        <div>
+            <label>Skills:</label>
+            <input type="text" th:field="*{skills}" />
+        </div>
+        <div>
+            <label>Availability:</label>
+            <input type="text" th:field="*{availability}" />
+        </div>
+        <div>
+            <label>Contact Details:</label>
+            <input type="text" th:field="*{contactDetails}" />
+        </div>
+        <div>
+            <button type="submit">Create</button>
+        </div>
+    </form>
+</body>
+</html>

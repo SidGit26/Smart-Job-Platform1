@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search Laborers</title>
+</head>
+<body>
+    <h2>Search Laborers</h2>
+    <form th:action="@{/search}" method="get">
+        <div>
+            <label>Skills:</label>
+            <input type="text" name="skills" />
+        </div>
+        <div>
+            <label>Availability:</label>
+            <input type="text" name="availability" />
+        </div>
+        <div>
+            <button type="submit">Search</button>
+        </div>
+    </form>
+</body>
+</html>
